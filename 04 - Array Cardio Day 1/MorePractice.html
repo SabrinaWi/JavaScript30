@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array Cardio 💪</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <script>
+      //Lucifer consumes the following items during a night of gluttony at LUX. Sum up the instances of each of these.
+
+      const devilBinge = [
+        "whiskey",
+        "cool ranch puffs",
+        "whiskey",
+        "burrito",
+        "taco",
+        "chocolate covered berries",
+        "taco",
+        "whiskey",
+        "tequila shot",
+        "cool ranch puffs",
+        "whiskey",
+        "chili cheese fries",
+        "devil's food cake",
+        "taco",
+        "whiskey",
+        "burrito",
+        "tequila shot",
+      ];
+
+      const neatDevil = devilBinge.reduce(function (obj, item) {
+        if (!obj[item]) {
+          obj[item] = 0;
+        }
+        obj[item]++;
+        return obj;
+      }, {});
+
+      console.log(neatDevil);
+    </script>
+  </body>
+</html>
